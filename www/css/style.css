@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 56px 5px 63px 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #AB47BC;
+    padding: 20px 0px 8px 0px;
+}
+
+.navbar-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.tabbar {
+    display: flex;
+    background-color: #AB47BC;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    padding: 20px 0px 12px 0px;
+}
+
+.tab-list {
+
+}
+
+.tab-add {
+    display: none;
+    padding-top: 20px;
+}
+
+.tab-add .mui-btn {
+    width: 100%;
+}
+
+.tab-settings {
+    display: none;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    align-items: center;
+}
+
+.todo-item span {
+    color: rgb(129, 129, 129);
+}

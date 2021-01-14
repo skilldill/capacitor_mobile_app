@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h3 class="navbar-title" id="navbar-title">Список</h3>
+        </div>
+
+        <div class="tabs">
+            <div class="tab tab-list" id="tab-list"></div>
+            <div class="tab tab-add" id="tab-add">
+                <form class="mui-form" id="form-create">
+                    <div class="mui-textfield mui-textfield--float-label">
+                      <input type="text" name="name" autocomplete="off">
+                      <label>Заголовок</label>
+                    </div>
+                    <div class="mui-textfield mui-textfield--float-label">
+                      <input type="date" name="date" value="Value on load" autocomplete="off">
+                      <label>Дата</label>
+                    </div>
+                    <div class="mui-textfield mui-textfield--float-label">
+                      <textarea name="description" autocomplete="off"></textarea>
+                      <label>Содержание</label>
+                    </div>
+                    <button type="submit" class="mui-btn mui-btn--primary mui-btn--raised">Создать</button>
+                </form>
+            </div>
+            <div class="tab tab-settings" id="tab-settings">
+                <h1>Settings</h1>
+            </div>
+        </div>
+
+        <div class="tabbar" id="tabbar">
+            <div class="tabbar-item" tabname="Список" tabid="tab-list">
+                <img src="./assets/list.svg" alt="список">
+            </div>
+            <div class="tabbar-item" tabname="Создать заметку" tabid="tab-add">
+                <img src="./assets/add.svg" alt="создать заметку">
+            </div>
+            <div class="tabbar-item" tabname="Настройки" tabid="tab-settings">
+                <img src="./assets/settings.svg" alt="настройки">
+            </div>
+        </div>
+    </div>
+    <div class="backdrop" id="backdrop">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-title"></h2>
+            </div>
+
+            <div class="modal-body" id="modal-body">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/mui.min.js"></script>
+<script src="./js/dataService.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/script.js"></script>
+</html>
