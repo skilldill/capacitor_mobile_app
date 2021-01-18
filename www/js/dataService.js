@@ -19,11 +19,17 @@ const TodosService = {
         saveTodos(todos);
     },
 
-    remove: () => {
+    remove: (id) => {
+        const filtredTodos = todos.filter((todo, currentId) => currentId !== id);
+        
+        console.log(id, filtredTodos);
 
+        todos = filtredTodos;
+        saveTodos(todos);
     },
 
     clear: () => {
-
+        todos = [];
+        saveTodos(todos);
     }
 }

@@ -56,3 +56,63 @@ body {
 .todo-item span {
     color: rgb(129, 129, 129);
 }
+
+.modal-body .btn-remove {
+    position: absolute;
+    bottom: 0; left: 20px;
+    width: calc(100% - 40px);
+}
+
+.settings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px 0;
+}
+
+.settings-theme {
+    padding: 16px 0;
+}
+
+.switch {
+    height: 15px;
+    width: 45px;
+    background-color: #1a6fb4;
+    border-radius: 30px;
+}
+
+.switch .switch-circle {
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    background-color: #14558a;
+    transform: translateY(-4px);
+    transition: all .3s;
+}
+
+.switch-checked {
+    background-color: #2293f0;
+}
+
+.switch-checked .switch-circle {
+    background-color: #1873be;
+    transform: translateY(-4px) translateX(22px);
+}
+
+.dark-theme {
+ background-color: #303e49;
+ color: white; 
+}
+
+.dark-theme .navbar,
+.dark-theme .tabbar {
+    background-color: #202a31;
+}
+
+.dark-theme .mui-form label,
+.dark-theme .mui-form .mui-textfield--float-label label,
+.dark-theme .mui-form input,
+.dark-theme .mui-form textarea {
+    color: white;
+}

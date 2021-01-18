@@ -17,6 +17,7 @@
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.068);
     transform: translateY(540px);
     transition: all .3s;
+    color: black !important;
 }
 
 .modal-body {

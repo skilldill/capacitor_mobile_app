@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/mui.min.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/notification.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -34,7 +35,18 @@
                 </form>
             </div>
             <div class="tab tab-settings" id="tab-settings">
-                <h1>Settings</h1>
+                <div class="settings-row settings-theme">
+                    <span>Тема</span>
+
+                    <div class="switch" checked="false" id="switch-theme">
+                        <div class="switch-circle"></div>
+                    </div>
+                </div>
+
+                <div class="settings-row">
+                    <span>Очистить хранилище</span>
+                    <button class="mui-btn mui-btn--small mui-btn--danger" id="btn-clear-todos">Очистить</button>
+                </div>
             </div>
         </div>
 
@@ -50,6 +62,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
     <div class="backdrop" id="backdrop">
         <div class="modal" id="modal">
             <div class="modal-header">
@@ -61,9 +75,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-body" id="notification-body"></div>
+    </div>
 </body>
 <script src="./js/mui.min.js"></script>
 <script src="./js/dataService.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/notification.js"></script>
 <script src="./js/script.js"></script>
 </html>

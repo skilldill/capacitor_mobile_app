@@ -1,0 +1,21 @@
+.notification {
+    position: fixed;
+    top: 0px; left: 0px; right: 0px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    transition: all .3s;
+    transform: translateY(-100px);
+}
+
+.notification-show {
+    transform: translateY(0px);
+}
+
+.notification-body {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    color: black !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.123);
+}
